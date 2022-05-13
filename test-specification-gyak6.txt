@@ -1,0 +1,16 @@
+[ALREADY DONE]: FiringMode.SINGLE, expected primary fired
+[ALREADY DONE]: FiringMode.ALL
+1:
+	FiringMode.SINGLE twice, expected that both stores get fired once, first primary then secondary
+2:
+	Primary TS is empty, second is not
+	FiringMode.SINGLE is expected to fire the second one
+3:
+	FiringMode.SINGLE twice, but second store is empty, so we expect the primary to fire twice
+4:
+	FiringMode.SINGLE once, but the primary store reports failiure, so no TS gets fired at all
+5:
+	FiringMode.ALL, but primary is empty, so it doesn't get fired
+6:
+	FiringMode.ALL, but secondary is empty, so it doesn't get fired
+
